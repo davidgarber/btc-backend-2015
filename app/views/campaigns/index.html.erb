@@ -2,6 +2,6 @@
 
 <ul>
 	<% @campaigns.each do |campaign| %>
-		<li><%= campaign.name %></li>
+		<li><%= link_to campaign.name, campaigns_path(campaign) %></li>
 	<% end %>
 </ul>
