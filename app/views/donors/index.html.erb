@@ -1,0 +1,7 @@
+<h1>Donors</h1>
+
+<ul>
+	<% @donors.each do |donor| %>
+		<li><%= link_to donor.name, donors_path(donor) %></li>
+	<% end %>
+</ul>
