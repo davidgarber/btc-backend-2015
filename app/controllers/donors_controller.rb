@@ -1,7 +1,7 @@
 class DonorsController < ApplicationController
 
 	def index
-		@donors = Donor.allow_concurrency
+		@donors = Donor.all
 	end
 
 	def show
