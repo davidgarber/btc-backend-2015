@@ -1,6 +1,10 @@
 class CandidatesController < ApplicationController
 
 	def index
-		@candidates = Candidate.allow_concurrency
+		@candidates = Candidate.all
+	end
+
+	def show
+		@candidate = Candidate.find(params[:id])
 	end
 end
