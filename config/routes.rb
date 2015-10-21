@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   resources :candidates
 
+  resources :about
+
 
 end
